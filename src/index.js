@@ -2,12 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import RestaurantStore from "./restaurant_APP/restaurant_redux_management/restaurantStore"
+import { Provider } from 'react-redux';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+
+    <Provider store={RestaurantStore}>
+     <App />
+    </Provider>
+
+    
   </React.StrictMode>
 );
 

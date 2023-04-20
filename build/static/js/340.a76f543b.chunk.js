@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkrestoapp=self.webpackChunkrestoapp||[]).push([[340],{9340:function(r,e,s){s.r(e);s(2791);var a=s(184);e.default=function(){return(0,a.jsx)("div",{className:"RestaurantError_container",children:(0,a.jsx)("h1",{className:"RestaurantError_h1",children:"opps 404 error..."})})}}}]);
+//# sourceMappingURL=340.a76f543b.chunk.js.map

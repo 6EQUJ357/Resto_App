@@ -1,0 +1,477 @@
+ * {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+ }
+ 
+ 
+ /* tableComponent_container */
+
+ .tabb {
+    background-image: conic-gradient(blue, white ,green);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+.table_button_containersss {
+    border-radius: 30px;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 1px 1px 15px black;
+}
+ .table_button_container {
+    display: inline;
+    width: 100%;
+    
+   
+ }
+.table_button {
+    background-color: lime;
+    padding: 10px;
+    margin: 5px 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px red;
+}
+
+.table_h1 {
+    text-transform: capitalize;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+    margin-bottom: 20px;
+}
+
+.restaurant_contact_box {
+    background: url("https://cdn.cbeditz.com/cbeditz/large/11645787233blsv7gnxvwxa7f3lmmvl83q8fbzodnadsfnwybxgbdvwwkcejv3exbzwflhuw8kjkbmtjq9z9rozhwdjynoyvvrywnh03ju4jdvp.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding: 30px;
+}
+.restaurant_contact_orange {
+    width: 35%;
+    height: 350px;
+    background-color: #fc2803;
+    padding: 50px ;
+    border-radius: 30px;
+    float: left;
+    margin: 0px 90px 0px 30px;
+    color: wheat;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.restaurant_contact_orange:hover {
+    box-shadow: 1px 1px 2px 3px black;
+}
+
+
+.restaurant_contact_address,.restaurant_contact_call, .restaurant_contact_email {
+    position: relative;
+    height: 65px;
+}
+.symbol {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+}
+.qw, .qw2, .qw3, .cal, .cal2, .em, .em2 {
+    position: absolute;
+    left: 60px;
+}
+.qw {
+    top: 3px;
+}
+.qw2 {
+    top: 30px;
+}
+.qw3 {
+    top: 45px;
+}
+.cal, .em {
+    top: 9px;
+}
+.cal2, .em2 {
+    top: 35px;
+}
+
+.black {
+    background-color: black;
+}
+.black :hover {
+    box-shadow: 1px 1px 2px 3px #fc2803;
+}
+.timing, .timings {
+    text-transform: capitalize;
+    font-size: 25px;
+    font-family:cursive;
+    margin-bottom: 7px;
+}
+.timings {
+    font-size: large;
+}
+
+.touch {
+    margin-top: 30px;
+    font-weight: bolder;
+}
+.touch h1 {
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 3px red;
+}
+.touch_pa {
+    width:60%;
+    margin:10px auto;
+    text-align: center;
+    text-transform: capitalize;
+    color:antiquewhite;
+    text-shadow: 1px 1px 1px red;
+    
+}
+
+.forms {
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
+}
+.input_name, .input_email, .input_messaga {
+    width: 60%;
+    height: 30px;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+.input_name:hover {
+    box-shadow: 1px 1px 3px 2px black;
+}
+.input_email:hover {
+    box-shadow: 1px 1px 3px 2px black;
+}
+.input_messaga:hover {
+    box-shadow: 1px 1px 3px 3px black;
+}
+.input_messaga {
+    height: 70px;
+    font-size: 17px;
+}
+.input_submit {
+    background-color: lime;
+    padding: 7px 20px;
+    border-radius: 7px 20px;
+    text-transform: capitalize;
+    font-weight: bolder;
+    cursor: pointer;
+    text-align: center;
+}
+.input_submit:hover {
+    box-shadow: 1px 1px 2px 2px black;
+}
+
+
+
+/* RestaurantAboutUs */
+
+
+.badge {
+    text-transform: uppercase;
+     color: lime;
+     font-size: 50px;
+
+}
+
+.restaurant_whoWeAre_container {
+    background: url("https://wallpaperaccess.com/full/1096882.jpg");
+    padding: 30px;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+}
+.restaurant_whoWeAre_container_box {
+    margin: 10px 0px;
+}
+.restaurant_whoWeAre_container_box1, .restaurant_whoWeAre_container_box2{
+    text-align: center;
+    text-transform: uppercase;
+    color: wheat;
+    padding: 10px;
+    text-shadow: 1px 1px 3px black;
+}
+.restaurant_whoWeAre_container p {
+    width: 55%;
+    margin: 30px auto;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bolder;
+    color: white;
+    padding: 10px;
+    text-shadow: 1px 1px 3px black;
+}
+
+.restaurant_whoWeAre_container_link {
+    color: white;
+    background-color: red;
+    padding: 7px 50px;
+    text-decoration: none;
+    border-radius: 20px ;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+
+/* Restaurant_create_account */
+
+.restaurant_create_account_container {
+    background-color: #fc2803;
+    border: 1px solid black;
+    
+}
+.restaurant_create_account_box {
+    width: 70%;
+    height: 500px;
+    margin: 50px auto;
+}
+.restaurant_create_account_box_left {
+    width: 40%;
+    height: 100%;
+    float: left;
+    background: url("https://s1.1zoom.me/big0/127/Fast_food_Hamburger_Buns_Vegetables_Meat_products_560830_791x1024.jpg");
+    background-size: contain;
+    border-radius: 10px;
+}
+.restaurant_create_account_box_left_content {
+    width: 95%;
+    margin: 150px auto;
+
+    text-align: center;
+}
+.restaurant_create_account_box_left_content h1{
+    text-transform: capitalize;
+    font-size: 40px;
+    text-shadow: 1px 1px 2px red;
+    
+}
+.restaurant_create_account_box_left_content p {
+    width: 100%;
+    font-size: 20px;
+    margin: 25px 1% 40px;
+    text-shadow: 1px 1px 1px red;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.restaurant_create_account_box_left_content_link {
+    color: black;
+    text-decoration: none;
+    padding: 5px 50px;
+    border-radius: 30px;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px red;
+    box-shadow: 0px 0px 1px 1px black;
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+.restaurant_create_account_box_left_content_link:hover {
+    box-shadow: 1px 1px 2px 2px black;
+}
+
+.restaurant_create_account_box_right {
+    width: 60%;
+    height: 100%;
+    float: right;
+    background-color: white;
+    border-radius: 10px;
+}
+.restaurant_create_account_box_right_content {
+    text-align: center;
+    width: 80%;
+    margin: 10px auto;
+}
+.restaurant_create_account_box_right_content h1{
+    font-size: 35px;
+    color: aqua;
+    text-shadow: 0px 0px 2px black;
+    text-transform: capitalize;
+}
+
+.font_container {
+    width: 60%;
+    margin: 10px 50px;
+    height: 60px;
+}
+
+.fonttt {
+    margin: 5px 5px 0px 10px ;
+    font-size: large;
+    font-weight: bolder;
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    padding-top: 10px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+.fonttt:hover {
+    background-color: blue;
+    color: white;
+}
+.restaurant_create_account_box_right_content p {
+    font-size: small;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.nnn, .eee, .ppp {
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: bolder;
+    /* margin-bottom: 10px; */
+}
+.cch {
+    margin-left: 50px;
+}
+.cch_lable {
+    margin-left: 10px;
+}
+.btb {
+    text-transform: capitalize;
+    padding: 10px 40px;
+    background-color: aqua;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: large;
+    margin-bottom: 20px;
+}
+
+.btb:hover {
+    background-color: red;
+}
+
+/* restaurant_signin */
+
+.restaurant_signin_container {
+    background-color: yellow; 
+    border: 1px solid black;
+    height: 1000px;
+}
+.restaurant_signin_container_box {
+    width: 80%;
+    height: 450px;
+    margin: 50px 170px;
+    padding: 30px;
+    position: relative;
+}
+.restaurant_signin_container_box_bottom {
+    width: 50%;
+    height: 430px;
+    position: absolute;
+    background: url("https://wallpapersmug.com/download/1920x1080/b67e3e/pizza-slices-food.jpg");
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 2px black;   
+}
+.restaurant_signin_container_box_bottom:hover {
+    box-shadow: 1px 1px 5px 5px black;   
+}
+
+.box_bottom_text, .box_bottom_font {
+    text-align: center;
+   color: yellow;
+    width: 50%;
+    padding: 10px;
+    margin: 50px 0px 10px 70px;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 5px black;
+    font-size: 17px;
+    font-weight: bolder;
+}
+.box_bottom_font {
+    margin-top: 80px;
+}
+.box_bottom_font p {
+    margin-bottom: 10px;
+}
+.box_bottom_font i {
+    font-size: 25px;
+    box-shadow: 1px 1px 2px 2px black;
+    width: 40px;
+    height: 40px;
+    padding: 7px 5px 5px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+}
+
+/* top_box */
+
+.restaurant_signin_container_box_top {
+    border-radius: 20px;
+    text-align: center;
+    width: 40%;
+    height: 330px;
+    position: absolute;
+    right: 200px;
+    top: 80px;
+    background: url("https://wallpaperaccess.com/full/126593.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+.restaurant_signin_container_box_top:hover {
+    box-shadow: 2px 2px 3px 2px black;
+}
+.top_text {
+    text-align: center;
+    margin: 5px 10px;
+    height: 95%;
+}
+.top_text h1 {
+    color: aqua;
+    text-transform: capitalize;
+    text-shadow: 0px 0px 2px black;
+    margin-bottom: 15px;
+}
+.top_inp {
+    width: 250px;
+    height: 35px;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+.top_but {
+    text-transform: capitalize;
+    padding: 7px 50px;
+    background-color: aqua;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: large;
+    margin-top: 10px;
+}
+.top_para {
+    text-transform: capitalize;
+    font-size: small;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: white;
+}
+.top_bot_para {
+    text-transform: capitalize;
+    font-size: small;
+    font-weight: 500;
+}
+.top_bot_font {
+    width: 30px;
+    padding-top: 10px;
+
+}

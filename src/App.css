@@ -1,38 +1,132 @@
-.App {
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+.contsiner {
+  border: 2px solid lime;
+  box-shadow: 0px 0px 15px black;
+  width: 60%;
+  margin: 20px auto;
+  padding: 10px;
+}
+h1 {
+  color: aqua;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-transform: capitalize;
+}
+
+.child {
+  border: 0px solid;
+  width: 50%;
+  margin: 50px auto;
+  padding: 30px;
+  box-shadow: 0px 0px 10px black;
+  border-radius: 10px;
+}
+.lable {
+  text-transform: capitalize;
+  width: 180px;
+  display: inline-block;
+  color: lime;
+  font-weight: bolder;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input {
+  width: 400px;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button {
+  text-align: center;
+  text-transform: capitalize;
+  background-color: rgb(9, 218, 9);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-left: 45%;
+  box-shadow: 1px 1px 5px black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* maps */
+
+.item_container {
+  display: inline-block;
+  width: 30%;
+  height: 400px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px black;
+  margin: 20px;
+  border: 1px solid;
+  overflow: hidden;
+}
+
+.item_head {
+  color: red;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.item_img {
+  width: 100%;
+  height: 250px;
+  margin: 10px 0px;
+  border-radius: 10px;
+  object-fit: cover;
+  
+}
+
+.item_price {
+  text-transform: capitalize;
+  font-weight: bolder;
+  margin-top: 10px;
+}
+.spa_price {
+  color: red;
+}
+
+
+
+              /* restaurant app style */
+.link {
+  color: aqua;
+}
+.immaa {
+  position: absolute;
+}
+.lin {
+  color: red;
+}
+
+/* restaurent manu main div */
+.menucont {
+  background-image: linear-gradient(red, green, blue);
+}
+
+/* restaurent error component */
+.RestaurantError_container{ 
+  background-image:url("https://media.tenor.com/cUL8iFJhr0gAAAAC/oasisnetwork-sun.gif");
+  background-repeat: no-repeat;
+  background-position:  center;
+  background-size:100% 600px;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.RestaurantError_h1 {
+  color: red;
+  text-transform:"capitalize";
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 5rem;
+  background-image: url("https://media.tenor.com/C-6fvsJAHNEAAAAC/shooting-stars-aesthetic.gif");
+  background-position: center;
+  background-size: contain;
+  background-clip: text;
+  color: transparent;
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ 
