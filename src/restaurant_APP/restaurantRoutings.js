@@ -1,5 +1,5 @@
 import React, {lazy, Suspense} from 'react'
-import { HashRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
           // style
 import "../App.css"
@@ -42,7 +42,7 @@ const RestaurantRoutings = () => {
   return (
     <div>
         <div >
-            <HashRouter>
+            <BrowserRouter>
               <Suspense fallback = {<center><h1>loading.....</h1></center>}>
                 <Routes>
                   <Route path='/' element = {<RestaurantHome />}/>                
@@ -81,7 +81,7 @@ const RestaurantRoutings = () => {
                 </Routes>
               </Suspense>
 
-            </HashRouter>
+            </BrowserRouter>
         </div>
     </div>
   )
