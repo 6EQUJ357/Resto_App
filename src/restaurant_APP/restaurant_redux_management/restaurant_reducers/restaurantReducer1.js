@@ -2,7 +2,8 @@ import { createSlice } from "@reduxjs/toolkit"
 
 let initialState = {
     cartValues : [],
-    cartPrize : 0
+    cartPrize : 0,
+    tableNumber : null
 }
 
 const RestaurantReducer1 = createSlice({
@@ -11,6 +12,7 @@ const RestaurantReducer1 = createSlice({
     
         reducers : {
             INCREAMENTCART : (state, action)=>{
+                
                 state.cartValues.push(action.payload);
 
                 let prise = state.cartValues.map(prise =>prise.productPrice);
@@ -18,19 +20,27 @@ const RestaurantReducer1 = createSlice({
             },               
 
             DECREAMENTCART : (state, action) => {
-                let index = state.cartValues.findIndex(state=> state.productName === action.payload.productName);
-
-                if(index > -1) {
-                state.cartValues.splice(index,1);
-                }
-                            
+               
+               let index = state.cartValues.findIndex(state=> state.productName === action.payload.productName);
+               
+               state.cartValues.splice(index, 1)
+                 
+               if(state.cartValues.length >0) {
                 let prise = state.cartValues.map(prise =>prise.productPrice);
                  state.cartPrize = prise.reduce((a,b) => a+b)
+               }
+               
+
+                
+            },
+
+            TableCart :(state, action) => {
+                state.tableNumber = action.payload
             }
         }
 
 }) 
 
-export const {INCREAMENTCART, DECREAMENTCART} = RestaurantReducer1.actions
+export const {INCREAMENTCART, DECREAMENTCART, TableCart} = RestaurantReducer1.actions
 export default RestaurantReducer1.reducer
 

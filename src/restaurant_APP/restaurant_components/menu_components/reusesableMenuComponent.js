@@ -5,10 +5,13 @@ import { useSelector } from 'react-redux'
 
 
 
-const ReusesableMenuConponent = ({categoty, menuName, INCREAMENTCART, DECREAMENTCART}) => {
+const ReusesableMenuConponent = ({categoty, menuName, INCREAMENTCART}) => {
   // getting store values...
 
   const cartCount = useSelector((state)=> state.RestaurantReducer1.cartValues.length);
+
+  let tabnum = useSelector(state => state.RestaurantReducer1.tableNumber)
+  
 
   const dispatch = useDispatch();
 
@@ -21,10 +24,10 @@ const ReusesableMenuConponent = ({categoty, menuName, INCREAMENTCART, DECREAMENT
   
 }
 
-  const DECREAMENT = async(items)=> {
-    await dispatch(DECREAMENTCART({productName:items.product_name, productPrice:items.product_price, productImg: items.product_img, productId : items.product_id}));
-     alert("item removed from cart...");
-   }
+  // const DECREAMENT = async(items)=> {
+  //   await dispatch(DECREAMENTCART({productName:items.product_name, productPrice:items.product_price, productImg: items.product_img, productId : items.product_id}));
+  //    alert("item removed from cart...");
+  //  }
 
   return (
     <div style={{position:"relative", backgroundColor:"olivedrab"}}>
@@ -50,9 +53,12 @@ const ReusesableMenuConponent = ({categoty, menuName, INCREAMENTCART, DECREAMENT
                 <p class="card-text" style={{ textAlign: "center"}}>price : <span style={{color:"red"}}>{items.product_price}</span>/-</p>
 
                 &emsp;
-                <button type='button' style={{boxShadow:"2px 2px 3px black"}} class="btn btn-info" title='add to cart' onClick={()=>INCREAMENT(items)}>Add item</button>
+                
+                <button type='button' style={{boxShadow:"2px 2px 3px black", marginLeft:"60px"}} class="btn btn-info" title='add to cart' onClick={()=>INCREAMENT(items)}>Add item</button>
+                 
+                 
                 &emsp;
-                <button type='button'style={{boxShadow:"2px 2px 3px black"}} class="btn btn-danger" title='remove from cart' onClick={()=>DECREAMENT(items)}>Remove item</button>
+                {/* <button type='button'style={{boxShadow:"2px 2px 3px black"}} class="btn btn-danger" title='remove from cart' onClick={()=>DECREAMENT(items)}>Remove item</button> */}
 
                 </div>
             </div>

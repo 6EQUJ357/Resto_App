@@ -1,5 +1,5 @@
 import React, {lazy, Suspense} from 'react'
-import { HashRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
           // style
 import "../App.css"
@@ -42,8 +42,8 @@ const RestaurantRoutings = () => {
   return (
     <div>
         <div >
-            <HashRouter>
-              <Suspense fallback = {<center><h1>loading...</h1></center>}>
+            <BrowserRouter>
+              <Suspense fallback = {<center><h1>loading.....</h1></center>}>
                 <Routes>
                   <Route path='/' element = {<RestaurantHome />}/>                
                   <Route path='/menu' element = {<RestaurantMenu />}/>
@@ -76,12 +76,12 @@ const RestaurantRoutings = () => {
                   <Route path='/cart' element = {< RestaurantCart/>}/>
                   <Route path='/login' element = {<RestaurantLogIn />}/>   
                   <Route path='/createAccount' element = {<RestaurantCreateAccount />}/>  
-                  <Route path='*' element = {<RestaurantError />}/>
+                  <Route path='*' element = {<RestaurantError />}/> 
 
                 </Routes>
               </Suspense>
 
-            </HashRouter>
+            </BrowserRouter>
         </div>
     </div>
   )
