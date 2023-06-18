@@ -2,7 +2,7 @@ hi!.....
 
 i'm Nalla Ranga Murali...
 
-i'm a FrontEnd / React js developer.
+i'm a MERN Stack developer.
 
 this is a brand new project of multipage Restaurant Application
 
